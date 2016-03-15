@@ -430,7 +430,7 @@
             // button3
             // 
             this.button3.Image = global::Курси.Properties.Resources.exit;
-            this.button3.Location = new System.Drawing.Point(469, 4);
+            this.button3.Location = new System.Drawing.Point(496, 142);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(61, 55);
             this.button3.TabIndex = 19;
@@ -440,7 +440,7 @@
             // button2
             // 
             this.button2.Image = global::Курси.Properties.Resources.blue_document_attribute_t_icon;
-            this.button2.Location = new System.Drawing.Point(323, 4);
+            this.button2.Location = new System.Drawing.Point(391, 105);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(47, 46);
             this.button2.TabIndex = 17;
@@ -450,7 +450,7 @@
             // button1
             // 
             this.button1.Image = global::Курси.Properties.Resources.gnome_session_logout;
-            this.button1.Location = new System.Drawing.Point(179, 4);
+            this.button1.Location = new System.Drawing.Point(283, 16);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 46);
             this.button1.TabIndex = 15;
@@ -471,7 +471,7 @@
             // button5
             // 
             this.button5.Image = global::Курси.Properties.Resources.Mart_Glaze_Folder_blue_open;
-            this.button5.Location = new System.Drawing.Point(397, 4);
+            this.button5.Location = new System.Drawing.Point(444, 151);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(46, 46);
             this.button5.TabIndex = 21;
@@ -481,7 +481,7 @@
             // button6
             // 
             this.button6.Image = global::Курси.Properties.Resources.Aha_Soft_Torrent_Copyleft;
-            this.button6.Location = new System.Drawing.Point(250, 4);
+            this.button6.Location = new System.Drawing.Point(339, 62);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(46, 46);
             this.button6.TabIndex = 22;
