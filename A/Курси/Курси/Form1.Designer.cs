@@ -77,6 +77,9 @@
             this.button6 = new System.Windows.Forms.Button();
             this.п_ІRichTextBox = new System.Windows.Forms.RichTextBox();
             this.адресаRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             idStudentLabel = new System.Windows.Forms.Label();
             парольLabel = new System.Windows.Forms.Label();
             телефонLabel = new System.Windows.Forms.Label();
@@ -440,7 +443,7 @@
             // button2
             // 
             this.button2.Image = global::Курси.Properties.Resources.blue_document_attribute_t_icon;
-            this.button2.Location = new System.Drawing.Point(391, 105);
+            this.button2.Location = new System.Drawing.Point(269, 72);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(47, 46);
             this.button2.TabIndex = 17;
@@ -450,7 +453,7 @@
             // button1
             // 
             this.button1.Image = global::Курси.Properties.Resources.gnome_session_logout;
-            this.button1.Location = new System.Drawing.Point(283, 16);
+            this.button1.Location = new System.Drawing.Point(269, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 46);
             this.button1.TabIndex = 15;
@@ -471,7 +474,7 @@
             // button5
             // 
             this.button5.Image = global::Курси.Properties.Resources.Mart_Glaze_Folder_blue_open;
-            this.button5.Location = new System.Drawing.Point(444, 151);
+            this.button5.Location = new System.Drawing.Point(406, 4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(46, 46);
             this.button5.TabIndex = 21;
@@ -481,9 +484,9 @@
             // button6
             // 
             this.button6.Image = global::Курси.Properties.Resources.Aha_Soft_Torrent_Copyleft;
-            this.button6.Location = new System.Drawing.Point(339, 62);
+            this.button6.Location = new System.Drawing.Point(269, 142);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(46, 46);
+            this.button6.Size = new System.Drawing.Size(47, 46);
             this.button6.TabIndex = 22;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -506,12 +509,45 @@
             this.адресаRichTextBox.TabIndex = 24;
             this.адресаRichTextBox.Text = "";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(182, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 16);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Курси";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(179, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 16);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Викладачі";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(182, 157);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 16);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Навчання";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(988, 490);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(адресаLabel);
             this.Controls.Add(this.адресаRichTextBox);
             this.Controls.Add(п_ІLabel);
@@ -592,6 +628,9 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.RichTextBox п_ІRichTextBox;
         private System.Windows.Forms.RichTextBox адресаRichTextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
