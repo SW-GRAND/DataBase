@@ -73,13 +73,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.фотоPictureBox = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.п_ІRichTextBox = new System.Windows.Forms.RichTextBox();
             this.адресаRichTextBox = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             idStudentLabel = new System.Windows.Forms.Label();
             парольLabel = new System.Windows.Forms.Label();
             телефонLabel = new System.Windows.Forms.Label();
@@ -433,7 +433,7 @@
             // button3
             // 
             this.button3.Image = global::Курси.Properties.Resources.exit;
-            this.button3.Location = new System.Drawing.Point(496, 142);
+            this.button3.Location = new System.Drawing.Point(408, 58);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(61, 55);
             this.button3.TabIndex = 19;
@@ -470,16 +470,6 @@
             this.фотоPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.фотоPictureBox.TabIndex = 3;
             this.фотоPictureBox.TabStop = false;
-            // 
-            // button5
-            // 
-            this.button5.Image = global::Курси.Properties.Resources.Mart_Glaze_Folder_blue_open;
-            this.button5.Location = new System.Drawing.Point(406, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(46, 46);
-            this.button5.TabIndex = 21;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -539,12 +529,23 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "Навчання";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(404, 123);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 20);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "CLOSE";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(988, 490);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -553,7 +554,6 @@
             this.Controls.Add(п_ІLabel);
             this.Controls.Add(this.п_ІRichTextBox);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -624,13 +624,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.RichTextBox п_ІRichTextBox;
         private System.Windows.Forms.RichTextBox адресаRichTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
