@@ -76,11 +76,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(102, 324);
+            this.label4.Location = new System.Drawing.Point(80, 324);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 20);
+            this.label4.Size = new System.Drawing.Size(219, 20);
             this.label4.TabIndex = 4;
-            this.label4.Text = "База даних \"КУРСИ\"";
+            this.label4.Text = "База даних \"КУРСИ v3.1\"";
             // 
             // pictureBox1
             // 
@@ -134,7 +134,7 @@
             // button5
             // 
             this.button5.Image = global::Курси.Properties.Resources.quit;
-            this.button5.Location = new System.Drawing.Point(152, 347);
+            this.button5.Location = new System.Drawing.Point(140, 347);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 55);
             this.button5.TabIndex = 9;
