@@ -7,7 +7,7 @@
 <DiagramLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ex:showrelationlabel="False" ViewPortX="0" ViewPortY="0" xmlns:ex="urn:schemas-microsoft-com:xml-msdatasource-layout-extended" xmlns="urn:schemas-microsoft-com:xml-msdatasource-layout">
   <Shapes>
     <Shape ID="DesignTable:Courses" ZOrder="9" X="371" Y="70" Height="210" Width="190" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="159" />
-    <Shape ID="DesignTable:ListOfStudying" ZOrder="8" X="70" Y="70" Height="153" Width="231" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
+    <Shape ID="DesignTable:ListOfStudying" ZOrder="8" X="70" Y="70" Height="191" Width="283" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
     <Shape ID="DesignTable:sqlite_sequence" ZOrder="7" X="637" Y="70" Height="115" Width="235" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:Students" ZOrder="6" X="371" Y="611" Height="229" Width="196" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
     <Shape ID="DesignTable:Teachers" ZOrder="5" X="371" Y="350" Height="229" Width="195" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
@@ -20,7 +20,7 @@
           <Y>146</Y>
         </Point>
         <Point>
-          <X>301</X>
+          <X>353</X>
           <Y>146</Y>
         </Point>
       </RoutePoints>
@@ -37,7 +37,7 @@
         </Point>
         <Point>
           <X>276</X>
-          <Y>223</Y>
+          <Y>261</Y>
         </Point>
       </RoutePoints>
     </Connector>
@@ -53,7 +53,7 @@
         </Point>
         <Point>
           <X>284</X>
-          <Y>223</Y>
+          <Y>261</Y>
         </Point>
       </RoutePoints>
     </Connector>

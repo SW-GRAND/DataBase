@@ -164,6 +164,14 @@ WHERE        (IdCourse LIKE :IdCourse) OR
               <Mapping SourceColumn="IdTeacher" DataSetColumn="IdTeacher" />
             </Mappings>
             <Sources>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="&quot;main&quot;.ListOfStudying" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Refresh" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="Refresh" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="Refresh">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Idlist, IdCourse, IdStudent, IdTeacher FROM "main".ListOfStudying</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
               <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="&quot;main&quot;.ListOfStudying" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Search" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="Search" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="Search">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
@@ -427,7 +435,7 @@ WHERE        (IdTeacher LIKE :IdTeacher) OR
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Courses" msprop:Generator_TableClassName="CoursesDataTable" msprop:Generator_TableVarName="tableCourses" msprop:Generator_RowChangedName="CoursesRowChanged" msprop:Generator_TablePropName="Courses" msprop:Generator_RowDeletingName="CoursesRowDeleting" msprop:Generator_RowChangingName="CoursesRowChanging" msprop:Generator_RowEvHandlerName="CoursesRowChangeEventHandler" msprop:Generator_RowDeletedName="CoursesRowDeleted" msprop:Generator_RowClassName="CoursesRow" msprop:Generator_UserTableName="Courses" msprop:Generator_RowEvArgName="CoursesRowChangeEvent">
+        <xs:element name="Courses" msprop:Generator_TableClassName="CoursesDataTable" msprop:Generator_TableVarName="tableCourses" msprop:Generator_TablePropName="Courses" msprop:Generator_RowDeletingName="CoursesRowDeleting" msprop:Generator_RowChangingName="CoursesRowChanging" msprop:Generator_RowEvHandlerName="CoursesRowChangeEventHandler" msprop:Generator_RowDeletedName="CoursesRowDeleted" msprop:Generator_UserTableName="Courses" msprop:Generator_RowChangedName="CoursesRowChanged" msprop:Generator_RowEvArgName="CoursesRowChangeEvent" msprop:Generator_RowClassName="CoursesRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdCourse" msprop:Generator_ColumnVarNameInTable="columnIdCourse" msprop:Generator_ColumnPropNameInRow="IdCourse" msprop:Generator_ColumnPropNameInTable="IdCourseColumn" msprop:Generator_UserColumnName="IdCourse" type="xs:string" />
@@ -440,7 +448,7 @@ WHERE        (IdTeacher LIKE :IdTeacher) OR
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ListOfStudying" msprop:Generator_TableClassName="ListOfStudyingDataTable" msprop:Generator_TableVarName="tableListOfStudying" msprop:Generator_RowChangedName="ListOfStudyingRowChanged" msprop:Generator_TablePropName="ListOfStudying" msprop:Generator_RowDeletingName="ListOfStudyingRowDeleting" msprop:Generator_RowChangingName="ListOfStudyingRowChanging" msprop:Generator_RowEvHandlerName="ListOfStudyingRowChangeEventHandler" msprop:Generator_RowDeletedName="ListOfStudyingRowDeleted" msprop:Generator_RowClassName="ListOfStudyingRow" msprop:Generator_UserTableName="ListOfStudying" msprop:Generator_RowEvArgName="ListOfStudyingRowChangeEvent">
+        <xs:element name="ListOfStudying" msprop:Generator_TableClassName="ListOfStudyingDataTable" msprop:Generator_TableVarName="tableListOfStudying" msprop:Generator_TablePropName="ListOfStudying" msprop:Generator_RowDeletingName="ListOfStudyingRowDeleting" msprop:Generator_RowChangingName="ListOfStudyingRowChanging" msprop:Generator_RowEvHandlerName="ListOfStudyingRowChangeEventHandler" msprop:Generator_RowDeletedName="ListOfStudyingRowDeleted" msprop:Generator_UserTableName="ListOfStudying" msprop:Generator_RowChangedName="ListOfStudyingRowChanged" msprop:Generator_RowEvArgName="ListOfStudyingRowChangeEvent" msprop:Generator_RowClassName="ListOfStudyingRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Idlist" msprop:Generator_ColumnVarNameInTable="columnIdlist" msprop:Generator_ColumnPropNameInRow="Idlist" msprop:Generator_ColumnPropNameInTable="IdlistColumn" msprop:Generator_UserColumnName="Idlist" type="xs:string" />
@@ -450,7 +458,7 @@ WHERE        (IdTeacher LIKE :IdTeacher) OR
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="sqlite_sequence" msprop:Generator_TableClassName="sqlite_sequenceDataTable" msprop:Generator_TableVarName="tablesqlite_sequence" msprop:Generator_RowChangedName="sqlite_sequenceRowChanged" msprop:Generator_TablePropName="sqlite_sequence" msprop:Generator_RowDeletingName="sqlite_sequenceRowDeleting" msprop:Generator_RowChangingName="sqlite_sequenceRowChanging" msprop:Generator_RowEvHandlerName="sqlite_sequenceRowChangeEventHandler" msprop:Generator_RowDeletedName="sqlite_sequenceRowDeleted" msprop:Generator_RowClassName="sqlite_sequenceRow" msprop:Generator_UserTableName="sqlite_sequence" msprop:Generator_RowEvArgName="sqlite_sequenceRowChangeEvent">
+        <xs:element name="sqlite_sequence" msprop:Generator_TableClassName="sqlite_sequenceDataTable" msprop:Generator_TableVarName="tablesqlite_sequence" msprop:Generator_TablePropName="sqlite_sequence" msprop:Generator_RowDeletingName="sqlite_sequenceRowDeleting" msprop:Generator_RowChangingName="sqlite_sequenceRowChanging" msprop:Generator_RowEvHandlerName="sqlite_sequenceRowChangeEventHandler" msprop:Generator_RowDeletedName="sqlite_sequenceRowDeleted" msprop:Generator_UserTableName="sqlite_sequence" msprop:Generator_RowChangedName="sqlite_sequenceRowChanged" msprop:Generator_RowEvArgName="sqlite_sequenceRowChangeEvent" msprop:Generator_RowClassName="sqlite_sequenceRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" minOccurs="0" />
@@ -458,7 +466,7 @@ WHERE        (IdTeacher LIKE :IdTeacher) OR
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Students" msprop:Generator_TableClassName="StudentsDataTable" msprop:Generator_TableVarName="tableStudents" msprop:Generator_RowChangedName="StudentsRowChanged" msprop:Generator_TablePropName="Students" msprop:Generator_RowDeletingName="StudentsRowDeleting" msprop:Generator_RowChangingName="StudentsRowChanging" msprop:Generator_RowEvHandlerName="StudentsRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentsRowDeleted" msprop:Generator_RowClassName="StudentsRow" msprop:Generator_UserTableName="Students" msprop:Generator_RowEvArgName="StudentsRowChangeEvent">
+        <xs:element name="Students" msprop:Generator_TableClassName="StudentsDataTable" msprop:Generator_TableVarName="tableStudents" msprop:Generator_TablePropName="Students" msprop:Generator_RowDeletingName="StudentsRowDeleting" msprop:Generator_RowChangingName="StudentsRowChanging" msprop:Generator_RowEvHandlerName="StudentsRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentsRowDeleted" msprop:Generator_UserTableName="Students" msprop:Generator_RowChangedName="StudentsRowChanged" msprop:Generator_RowEvArgName="StudentsRowChangeEvent" msprop:Generator_RowClassName="StudentsRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdStudent" msprop:Generator_ColumnVarNameInTable="columnIdStudent" msprop:Generator_ColumnPropNameInRow="IdStudent" msprop:Generator_ColumnPropNameInTable="IdStudentColumn" msprop:Generator_UserColumnName="IdStudent" type="xs:string" />
@@ -470,7 +478,7 @@ WHERE        (IdTeacher LIKE :IdTeacher) OR
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Teachers" msprop:Generator_TableClassName="TeachersDataTable" msprop:Generator_TableVarName="tableTeachers" msprop:Generator_RowChangedName="TeachersRowChanged" msprop:Generator_TablePropName="Teachers" msprop:Generator_RowDeletingName="TeachersRowDeleting" msprop:Generator_RowChangingName="TeachersRowChanging" msprop:Generator_RowEvHandlerName="TeachersRowChangeEventHandler" msprop:Generator_RowDeletedName="TeachersRowDeleted" msprop:Generator_RowClassName="TeachersRow" msprop:Generator_UserTableName="Teachers" msprop:Generator_RowEvArgName="TeachersRowChangeEvent">
+        <xs:element name="Teachers" msprop:Generator_TableClassName="TeachersDataTable" msprop:Generator_TableVarName="tableTeachers" msprop:Generator_TablePropName="Teachers" msprop:Generator_RowDeletingName="TeachersRowDeleting" msprop:Generator_RowChangingName="TeachersRowChanging" msprop:Generator_RowEvHandlerName="TeachersRowChangeEventHandler" msprop:Generator_RowDeletedName="TeachersRowDeleted" msprop:Generator_UserTableName="Teachers" msprop:Generator_RowChangedName="TeachersRowChanged" msprop:Generator_RowEvArgName="TeachersRowChangeEvent" msprop:Generator_RowClassName="TeachersRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdTeacher" msprop:Generator_ColumnVarNameInTable="columnIdTeacher" msprop:Generator_ColumnPropNameInRow="IdTeacher" msprop:Generator_ColumnPropNameInTable="IdTeacherColumn" msprop:Generator_UserColumnName="IdTeacher" type="xs:string" />
@@ -503,10 +511,10 @@ WHERE        (IdTeacher LIKE :IdTeacher) OR
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="Courses_ListOfStudying" msdata:parent="Courses" msdata:child="ListOfStudying" msdata:parentkey="IdCourse" msdata:childkey="IdCourse" msprop:Generator_UserChildTable="ListOfStudying" msprop:Generator_ChildPropName="GetListOfStudyingRows" msprop:Generator_UserRelationName="Courses_ListOfStudying" msprop:Generator_ParentPropName="CoursesRow" msprop:Generator_RelationVarName="relationCourses_ListOfStudying" msprop:Generator_UserParentTable="Courses" />
-      <msdata:Relationship name="Students_ListOfStudying" msdata:parent="Students" msdata:child="ListOfStudying" msdata:parentkey="IdStudent" msdata:childkey="IdStudent" msprop:Generator_UserChildTable="ListOfStudying" msprop:Generator_ChildPropName="GetListOfStudyingRows" msprop:Generator_UserRelationName="Students_ListOfStudying" msprop:Generator_RelationVarName="relationStudents_ListOfStudying" msprop:Generator_UserParentTable="Students" msprop:Generator_ParentPropName="StudentsRow" />
-      <msdata:Relationship name="Teachers_ListOfStudying" msdata:parent="Teachers" msdata:child="ListOfStudying" msdata:parentkey="IdTeacher" msdata:childkey="IdTeacher" msprop:Generator_UserChildTable="ListOfStudying" msprop:Generator_ChildPropName="GetListOfStudyingRows" msprop:Generator_UserRelationName="Teachers_ListOfStudying" msprop:Generator_RelationVarName="relationTeachers_ListOfStudying" msprop:Generator_UserParentTable="Teachers" msprop:Generator_ParentPropName="TeachersRow" />
-      <msdata:Relationship name="Teachers_Courses" msdata:parent="Teachers" msdata:child="Courses" msdata:parentkey="IdTeacher" msdata:childkey="IdTeacher" msprop:Generator_UserChildTable="Courses" msprop:Generator_ChildPropName="GetCoursesRows" msprop:Generator_UserRelationName="Teachers_Courses" msprop:Generator_RelationVarName="relationTeachers_Courses" msprop:Generator_UserParentTable="Teachers" msprop:Generator_ParentPropName="TeachersRow" />
+      <msdata:Relationship name="Courses_ListOfStudying" msdata:parent="Courses" msdata:child="ListOfStudying" msdata:parentkey="IdCourse" msdata:childkey="IdCourse" msprop:Generator_UserChildTable="ListOfStudying" msprop:Generator_ChildPropName="GetListOfStudyingRows" msprop:Generator_UserRelationName="Courses_ListOfStudying" msprop:Generator_RelationVarName="relationCourses_ListOfStudying" msprop:Generator_UserParentTable="Courses" msprop:Generator_ParentPropName="CoursesRow" />
+      <msdata:Relationship name="Students_ListOfStudying" msdata:parent="Students" msdata:child="ListOfStudying" msdata:parentkey="IdStudent" msdata:childkey="IdStudent" msprop:Generator_UserChildTable="ListOfStudying" msprop:Generator_ChildPropName="GetListOfStudyingRows" msprop:Generator_UserRelationName="Students_ListOfStudying" msprop:Generator_ParentPropName="StudentsRow" msprop:Generator_RelationVarName="relationStudents_ListOfStudying" msprop:Generator_UserParentTable="Students" />
+      <msdata:Relationship name="Teachers_ListOfStudying" msdata:parent="Teachers" msdata:child="ListOfStudying" msdata:parentkey="IdTeacher" msdata:childkey="IdTeacher" msprop:Generator_UserChildTable="ListOfStudying" msprop:Generator_ChildPropName="GetListOfStudyingRows" msprop:Generator_UserRelationName="Teachers_ListOfStudying" msprop:Generator_ParentPropName="TeachersRow" msprop:Generator_RelationVarName="relationTeachers_ListOfStudying" msprop:Generator_UserParentTable="Teachers" />
+      <msdata:Relationship name="Teachers_Courses" msdata:parent="Teachers" msdata:child="Courses" msdata:parentkey="IdTeacher" msdata:childkey="IdTeacher" msprop:Generator_UserChildTable="Courses" msprop:Generator_ChildPropName="GetCoursesRows" msprop:Generator_UserRelationName="Teachers_Courses" msprop:Generator_ParentPropName="TeachersRow" msprop:Generator_RelationVarName="relationTeachers_Courses" msprop:Generator_UserParentTable="Teachers" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

@@ -92,6 +92,8 @@
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.refreshToolStrip = new System.Windows.Forms.ToolStrip();
+            this.refreshToolStripButton = new System.Windows.Forms.ToolStripButton();
             idlistLabel = new System.Windows.Forms.Label();
             idCourseLabel = new System.Windows.Forms.Label();
             idStudentLabel = new System.Windows.Forms.Label();
@@ -106,6 +108,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.teachersDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsDataGridView)).BeginInit();
+            this.refreshToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // idlistLabel
@@ -621,12 +624,31 @@
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             this.dataGridViewTextBoxColumn15.ReadOnly = true;
             // 
+            // refreshToolStrip
+            // 
+            this.refreshToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.refreshToolStripButton});
+            this.refreshToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.refreshToolStrip.Name = "refreshToolStrip";
+            this.refreshToolStrip.Size = new System.Drawing.Size(1031, 25);
+            this.refreshToolStrip.TabIndex = 18;
+            this.refreshToolStrip.Text = "refreshToolStrip";
+            // 
+            // refreshToolStripButton
+            // 
+            this.refreshToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.refreshToolStripButton.Name = "refreshToolStripButton";
+            this.refreshToolStripButton.Size = new System.Drawing.Size(50, 22);
+            this.refreshToolStripButton.Text = "Refresh";
+            this.refreshToolStripButton.Click += new System.EventHandler(this.refreshToolStripButton_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(1018, 450);
+            this.ClientSize = new System.Drawing.Size(1031, 465);
+            this.Controls.Add(this.refreshToolStrip);
             this.Controls.Add(this.studentsDataGridView);
             this.Controls.Add(this.teachersDataGridView);
             this.Controls.Add(this.button5);
@@ -660,6 +682,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.teachersDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsDataGridView)).EndInit();
+            this.refreshToolStrip.ResumeLayout(false);
+            this.refreshToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -725,5 +749,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.ToolStrip refreshToolStrip;
+        private System.Windows.Forms.ToolStripButton refreshToolStripButton;
     }
 }

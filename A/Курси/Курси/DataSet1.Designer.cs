@@ -3896,48 +3896,52 @@ namespace Курси.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::Devart.Data.SQLite.SQLiteCommand[2];
+            this._commandCollection = new global::Devart.Data.SQLite.SQLiteCommand[3];
             this._commandCollection[0] = new global::Devart.Data.SQLite.SQLiteCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Idlist, IdCourse, IdStudent, IdTeacher FROM \"main\".ListOfStudying";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::Devart.Data.SQLite.SQLiteCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT        Idlist, IdCourse, IdStudent, IdTeacher
+            this._commandCollection[1].CommandText = "SELECT Idlist, IdCourse, IdStudent, IdTeacher FROM \"main\".ListOfStudying";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2] = new global::Devart.Data.SQLite.SQLiteCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"SELECT        Idlist, IdCourse, IdStudent, IdTeacher
 FROM            ListOfStudying
 WHERE        (Idlist LIKE :Idlist) OR
                          (IdCourse LIKE :IdCourse) OR
                          (IdStudent LIKE :IdStudent) OR
                          (IdTeacher LIKE :IdTeacher)";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             global::Devart.Data.SQLite.SQLiteParameter param = new global::Devart.Data.SQLite.SQLiteParameter();
             param.ParameterName = "Idlist";
             param.SQLiteType = global::Devart.Data.SQLite.SQLiteType.Text;
             param.Size = 2147483647;
             param.IsNullable = true;
             param.SourceColumn = "Idlist";
-            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2].Parameters.Add(param);
             param = new global::Devart.Data.SQLite.SQLiteParameter();
             param.ParameterName = "IdCourse";
             param.SQLiteType = global::Devart.Data.SQLite.SQLiteType.Text;
             param.Size = 2147483647;
             param.IsNullable = true;
             param.SourceColumn = "IdCourse";
-            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2].Parameters.Add(param);
             param = new global::Devart.Data.SQLite.SQLiteParameter();
             param.ParameterName = "IdStudent";
             param.SQLiteType = global::Devart.Data.SQLite.SQLiteType.Text;
             param.Size = 2147483647;
             param.IsNullable = true;
             param.SourceColumn = "IdStudent";
-            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2].Parameters.Add(param);
             param = new global::Devart.Data.SQLite.SQLiteParameter();
             param.ParameterName = "IdTeacher";
             param.SQLiteType = global::Devart.Data.SQLite.SQLiteType.Text;
             param.Size = 2147483647;
             param.IsNullable = true;
             param.SourceColumn = "IdTeacher";
-            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3968,8 +3972,21 @@ WHERE        (Idlist LIKE :Idlist) OR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int Search(DataSet1.ListOfStudyingDataTable dataTable, string Idlist, string IdCourse, string IdStudent, string IdTeacher) {
+        public virtual int Refresh(DataSet1.ListOfStudyingDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int Search(DataSet1.ListOfStudyingDataTable dataTable, string Idlist, string IdCourse, string IdStudent, string IdTeacher) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             if ((Idlist == null)) {
                 throw new global::System.ArgumentNullException("Idlist");
             }
