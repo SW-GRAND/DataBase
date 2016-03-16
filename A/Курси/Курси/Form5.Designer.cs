@@ -92,8 +92,7 @@
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.refreshToolStrip = new System.Windows.Forms.ToolStrip();
-            this.refreshToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             idlistLabel = new System.Windows.Forms.Label();
             idCourseLabel = new System.Windows.Forms.Label();
             idStudentLabel = new System.Windows.Forms.Label();
@@ -108,7 +107,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.teachersDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsDataGridView)).BeginInit();
-            this.refreshToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // idlistLabel
@@ -367,10 +365,11 @@
             this.idStudentToolStripTextBox,
             this.idTeacherToolStripLabel,
             this.idTeacherToolStripTextBox,
-            this.searchToolStripButton});
+            this.searchToolStripButton,
+            this.toolStripButton1});
             this.searchToolStrip.Location = new System.Drawing.Point(57, 416);
             this.searchToolStrip.Name = "searchToolStrip";
-            this.searchToolStrip.Size = new System.Drawing.Size(680, 25);
+            this.searchToolStrip.Size = new System.Drawing.Size(703, 25);
             this.searchToolStrip.TabIndex = 13;
             this.searchToolStrip.Text = "searchToolStrip";
             // 
@@ -624,23 +623,15 @@
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             this.dataGridViewTextBoxColumn15.ReadOnly = true;
             // 
-            // refreshToolStrip
+            // toolStripButton1
             // 
-            this.refreshToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.refreshToolStripButton});
-            this.refreshToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.refreshToolStrip.Name = "refreshToolStrip";
-            this.refreshToolStrip.Size = new System.Drawing.Size(1031, 25);
-            this.refreshToolStrip.TabIndex = 18;
-            this.refreshToolStrip.Text = "refreshToolStrip";
-            // 
-            // refreshToolStripButton
-            // 
-            this.refreshToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.refreshToolStripButton.Name = "refreshToolStripButton";
-            this.refreshToolStripButton.Size = new System.Drawing.Size(50, 22);
-            this.refreshToolStripButton.Text = "Refresh";
-            this.refreshToolStripButton.Click += new System.EventHandler(this.refreshToolStripButton_Click);
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // Form5
             // 
@@ -648,7 +639,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(1031, 465);
-            this.Controls.Add(this.refreshToolStrip);
             this.Controls.Add(this.studentsDataGridView);
             this.Controls.Add(this.teachersDataGridView);
             this.Controls.Add(this.button5);
@@ -682,8 +672,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.teachersDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentsDataGridView)).EndInit();
-            this.refreshToolStrip.ResumeLayout(false);
-            this.refreshToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -749,7 +737,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.ToolStrip refreshToolStrip;
-        private System.Windows.Forms.ToolStripButton refreshToolStripButton;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

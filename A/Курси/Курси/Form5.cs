@@ -80,6 +80,11 @@ namespace Курси
 
         private void refreshToolStripButton_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
             try
             {
                 this.listOfStudyingTableAdapter.Refresh(this.dataSet1.ListOfStudying);
@@ -88,7 +93,6 @@ namespace Курси
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
-
         }
     }
 }

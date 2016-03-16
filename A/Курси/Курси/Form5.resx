@@ -216,6 +216,28 @@
   <metadata name="searchToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>920, 17</value>
   </metadata>
+  <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAWCAYAAACosj4+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOaSURBVEhLtZZJS1xBFIXfIgRCAoGsAvkLgrOtOxcOOCsO
+        K3EV0RBU1E2cUMQBxIWahYpLBRdRnBZOEBR0YzuACIKCSisGJWgQaYKJ3tRXeR1sLfuZGAsO1VX31jmn
+        a3pl3VUSEhJepaSkvEtNTR1TWFb4mZaWJunp6RoZGRkB4ctjDGNtjjE44bZlnEtOTs6z5OTkD2rwt6am
+        Jpmbm5Pt7W25vLyUfy2MhQMuOOFGAy1b1lxU0muFpcLCQtnc3NREjwG40UALTVvev6ipfKOCnp6eHjk/
+        P5eLi4tHBRpooYm2beN3yc3NfaoC7sHBQfF6vf8NXV1dxv7rQBNtPNh2LCsxMbGqsbFRzs7O7o21tTUp
+        KyuTuLg4CQ4O1jVt+ol3dnZKSEjIrXEmoI0HbUYRvWSTsa4nJyeOODo60mIRERESHh4ukZGREhUVpWtf
+        u7i4WP8mx8RxE2jjAS+WOpYlDQ0NWug+qKurk7CwMHG5XNLW1ibLy8tyenqqa9r0Y8pXmzhMwANerKys
+        rM/Dw8NycHDgiOnpaW0mOjpaH2GIDg8PdYy6o6NDGyEeExOjDd3kuAt4wIulpuqr2+2W3d1dR5SWlupl
+        aG9vF4/H4xdrbW3Vy+QzBMi9nhMIeMALG/oHa7i1teWI+Ph4/a+Xlpb8+pubmyU0NFTHfGZ8hq7nBQIe
+        8MJl+H1lZUU2NjYcweZFZH193a+fW3h/f9+I63mBgAe8WJmZmV9mZmb0cXUCM4Sh++b/DeDEi5Wfn+/u
+        6+vTy+AE9hD7pL6+3hj3obu7Wx8AU+wu4AEvVlVV1ceKigpZXFx0xNDQ0J+7pr+/35gzMDCgTyI5/GtT
+        jgl4wIuldrdLfUu8o6Oj+igHAgMrKyv1BuZ25mbGADFq2vRzQ5eXl8v8/PwtDhPQxgNeLPU6eFpTU/Op
+        pKREZmdnHYEpLjH2EuJBQUF/QJt+4uSZxpuANh7woj8fOzs7rry8vD3eKpOTkwExNTUlCwsLMj4+rp8Q
+        sbGxesaoadNPnDzT+JtAE208aDMU5eyJmq636oV3Wl1dradwYmIiIBBkFrjQVldXdU2bflP+TaCBFppo
+        48G287tcXV09V4FS5XZXQXp7e2VkZORRADcaaKGJtm3DvyiXL46Pj/Nqa2tHk5KSvEVFRfqDyTHmhD0E
+        cMAFJ9xooIWmLW8uTJ1yHLq3t/e+paVlsKCgYD07O9vDpfgQwAEXnHCjcWuZLMv6BdJzoE80qM5BAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
   <metadata name="listOfStudyingTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>323, 17</value>
   </metadata>
@@ -233,9 +255,6 @@
   </metadata>
   <metadata name="studentsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>540, 56</value>
-  </metadata>
-  <metadata name="refreshToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>711, 0</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>33</value>
